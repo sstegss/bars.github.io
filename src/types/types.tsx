@@ -17,3 +17,13 @@ export interface IAddition{
 export interface IDeserialization{
   file: string | '';
 }
+
+export interface IPage{
+  markdownContent: string | '';
+  additions: IAddition[];
+}
+
+export interface ICheckBox{
+  title: string;
+  children: string;
+}
