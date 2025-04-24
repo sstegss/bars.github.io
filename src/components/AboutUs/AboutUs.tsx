@@ -2,12 +2,12 @@ import styled from "styled-components";
 import wall_image from "/images/wall_image.png";
 import stats from "/images/stats.png";
 const Container = styled.div`
-  max-width: calc(100vw - 20rem);
-  margin-inline: 20rem;
-  margin-top: 9rem;
+  max-width: calc(100vw - 10%);
+  margin-top: 90px;
+  align-self: center;
 `;
-const Add = styled.div`
-  margin-top: 9rem;
+const Ad = styled.div`
+  margin-top: 90px;
   display: flex;
   justify-content: space-between;
 `;
@@ -15,18 +15,21 @@ const Add = styled.div`
 const Mission = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 1.875rem;
   justify-content: space-between;
-  align-content:space-between;
+  align-content: space-between;
+`;
+const Best = styled.p`
+  font-size: 2.5rem;
 `;
 export default function AboutUs() {
   return (
     <Container>
-      <p style={{ fontSize: "40px" }}>
+      <Best>
         Ты можешь стать лучше. Ты можешь все! <br /> Нужно только правильное
         место.
-      </p>
-      <Add>
+      </Best>
+      <Ad>
         <img src={wall_image} alt="" />
         <Mission>
           <p>
@@ -36,7 +39,7 @@ export default function AboutUs() {
           </p>
           <img src={stats} alt="" />
         </Mission>
-      </Add>
+      </Ad>
     </Container>
   );
 }

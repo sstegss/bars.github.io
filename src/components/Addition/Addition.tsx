@@ -4,14 +4,14 @@ import { IAddition } from "../../types/types";
 import { baseTheme } from "../../styles/theme";
 
 const Container = styled.a`
-  width: 45rem;
-  height: 20rem;
+  width: 450px;
+  height: 200px;
   background: linear-gradient(
     180deg,
     rgba(87, 199, 133, 1) 0%,
     rgba(31, 169, 255, 1) 100%
   );
-  border-radius: 2.5rem;
+  border-radius: 25px;
   font-size: 24px;
   font-weight: 700;
   color: ${baseTheme.colors.white};
@@ -21,9 +21,9 @@ const Container = styled.a`
   flex-direction: column;
  
   & > img {
-    width: 7rem;
-    height: 7rem;
-    margin-top: 3rem;
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
     align-self: center;
   }
 `;

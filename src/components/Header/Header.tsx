@@ -6,43 +6,57 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import arrow_back from "/images/arrow_back.svg";
 const Container = styled.header`
-  margin-top: 6rem;
+  margin-block: 3%;
   position: fixed;
   width: 100vw;
   display: flex;
   justify-content: center;
+  height: 3.75vh;
+  max-height: 72px;
+  min-height: 40px;
 `;
 const Head = styled.div`
-  width: calc(100vw - 20rem);
+  width: calc(100vw - 10%);
   background-color: ${baseTheme.colors.white};
   height: 72px;
   display: flex;
-  color: blue;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 `;
 const Button = styled.a`
-  width: 14rem;
-  height: 6rem;
+  height: 60px;
   background-color: ${baseTheme.colors.blue};
   border-radius: 5px;
   color: ${baseTheme.colors.white};
   border: none;
   font-size: 24px;
-  margin-right: 2.3rem;
-  padding-inline: 2.5rem 1.8rem;
-  padding-block: 1.8rem;
+  margin-right: 23px;
+  padding-inline: 1vw;
+  padding-block: 18px;
+  text-align: center;
   &:hover {
     cursor: pointer;
   }
+  @media (${baseTheme.media.large}) {
+    font-size: 1rem
+  }
+  @media (${baseTheme.media.small}) {
+    margin-right: 15px;
+  }
 `;
 const Logo = styled.div`
-  margin: 0;
+   font-family: ${baseTheme.fonts.minor};
+   color: ${baseTheme.colors.black};
+   font-size: 2rem;
+   @media (${baseTheme.media.large}) {
+    font-size: 1rem
+  }
+  
 `;
 const Burger = styled.div`
-  margin-inline: 10rem 1.8rem;
+  margin-inline: 5% 18px;
 `;
 interface Props {
   back?: string;
@@ -62,7 +76,7 @@ const Header: FC<Props> = ({ back }) => {
         </Burger>
 
         <Logo>
-          <img src={logo} alt="" />
+          tim lead
         </Logo>
         <Button href="https://t.me/barsuadlearn_bot">Чат-бот</Button>
       </Head>

@@ -14,14 +14,15 @@ import abcde from "../markdownText/abcde/Abcde.md?raw";
 // import file from '../markdownText/matrix/matrix.md?raw'
 
 const Container = styled.div`
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 14rem;
-  width: calc(100vw - 20rem);
+  padding-top: 140px;
+  width: calc(100vw - 200px);
   margin-inline: 10rem;
 `;
+
 interface Props {
   back?: string | " ";
 }

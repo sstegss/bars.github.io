@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Header from "../Header/Header";
 import { baseTheme } from "../../styles/theme";
-import hero from "/public/images/hero.png";
-import arrow_up from "/public/images/arrow_up.svg";
-import arrow_down from "/public/images/arrow_down.svg";
+import hero from "/images/hero.png";
+import arrow_up from "/images/arrow_up.svg";
+import arrow_down from "/images/arrow_down.svg";
 import AboutUs from "../AboutUs/AboutUs";
 import Block from "../Block/Block";
 import { IBlock } from "../../types/types";
@@ -20,50 +20,152 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-bottom-left-radius: 4.6rem;
-  border-bottom-right-radius: 4.6rem;
+  border-bottom-left-radius: 46px;
+  border-bottom-right-radius: 46px;
 `;
 
 const Promo = styled.section`
-  width: calc(100vw - 20rem);
+  width: calc(100vw - 10%);
   background-color: ${baseTheme.colors.white};
-  height: 50.4rem;
-  border-radius: 2.5rem;
-  margin-top: 20rem;
-  display: flex;
+  height: 50vh;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
   justify-content: space-between;
-  margin-left: 1.2rem;
+  align-self: center;
+  margin-top: 130px;
 `;
 const PromoText = styled.p`
-  margin-left: 6.9rem;
-  margin-top: 10.4rem;
-  font-size: 4.8rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-inline: 3vw;
+  margin-top: 3vw;
+  font-size: 3rem;
   font-weight: 600;
+  align-self: center;
+  @media (${baseTheme.media.megaLarge}) {
+    font-size: 2rem;
+  }
+  @media (${baseTheme.media.large}) {
+    grid-column: span 2;
+  }
+  @media (${baseTheme.media.small}) {
+    font-size: 1rem;
+  }
 `;
 const Button = styled.button`
+  margin-left: 3vw;
+  margin-bottom: 3vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
   background-color: ${baseTheme.colors.blue};
   border-radius: 13px;
   border: 0;
-  height: 11.6rem;
-  width: 56rem;
-  margin-top: 5rem;
+  min-width: 29vw;
+  max-width: 560px;
+  height: 10vh;
   text-transform: uppercase;
   color: ${baseTheme.colors.white};
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  align-self: end;
+  font-size: 2.5rem;
   font-weight: 700;
+  object-fit: none;
   &:hover {
     cursor: pointer;
+  }
+
+  @media (${baseTheme.media.extraLarge}) {
+    font-size: 2rem;
+    height: 4rem;
+    & > img {
+      width: 2rem;
+    }
+  }
+
+  @media (${baseTheme.media.large}) {
+    font-size: 1.5rem;
+    height: 3rem;
+    & > img {
+      width: 1.5rem;
+    }
+  }
+  @media ${baseTheme.media.small} {
+    height: 3rem;
+    font-size: 1rem;
+    & > img {
+      display: none;
+    }
+  }
+`;
+const Hero = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  grid-column-start: 2;
+  grid-row: span 2;
+  & > img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @media (${baseTheme.media.large}) {
+    grid-row-start: 2;
+    grid-row: span 1;
   }
 `;
 const GoAhead = styled.p`
   // заменить на существительное
   color: ${baseTheme.colors.white};
   font-size: 40px;
-  margin-block: 4.5rem;
+  text-align: center;
+  margin-block: 30px;
+  @media ${baseTheme.media.small} {
+    font-size: 1rem;
+  }
 `;
+
+//сделать запрос blocks с бека
+function StarterPage() {
+  // file await
+  return (
+    <>
+      <Header />
+      <Container>
+        <Promo>
+          <PromoText>
+            Добро пожаловать на платформу
+            <span style={{ color: "#4481F6" }}> «Тим Лид»</span> — вашу
+            стартовую точку в мире эффективного лидерства!
+          </PromoText>
+          <Button>
+            записаться
+            <img src={arrow_up} alt="" />
+          </Button>
+
+          <Hero>
+            <img src={hero} alt="" />
+          </Hero>
+        </Promo>
+        <GoAhead>
+          Станьте лидером, за которым <br />
+          хочется идти.
+        </GoAhead>
+        <img src={arrow_down} alt="" />
+      </Container>
+      <AboutUs />
+      {/* {blocks.map((block) => (
+        <Block key={block.blockNumber}{...block}></Block>
+      ))} */}
+    </>
+  );
+}
+
+export default StarterPage;
 const blocks: IBlock[] = [
   {
     blockNumber: 1,
@@ -151,36 +253,3 @@ const blocks: IBlock[] = [
     ],
   },
 ];
-//сделать запрос blocks с бека
-function StarterPage() {
-  // file await
-  return (
-    <>
-      <Header />
-      <Container>
-        <Promo>
-          <PromoText>
-            Добро пожаловать на платформу <br />
-            <span style={{ color: "#4481F6" }}>«Тим Лид»</span> — вашу стартовую
-            точку в мире <br />
-            эффективного лидерства!
-            {/* <img src={hero} alt="" /> */}
-            <Button>
-              записаться
-              <img src={arrow_up} alt="" />
-            </Button>
-          </PromoText>
-          <img src={hero} alt="" style={{ alignContent: "end" }} />
-        </Promo>
-        <GoAhead>Станьте лидером, за которым хочется идти.</GoAhead>
-        <img src={arrow_down} alt="" />
-      </Container>
-      <AboutUs />
-      {blocks.map((block) => (
-        <Block key={block.blockNumber}{...block}></Block>
-      ))}
-    </>
-  );
-}
-
-export default StarterPage;

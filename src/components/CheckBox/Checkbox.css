@@ -1,21 +1,21 @@
 .CheckBox--Container{
-  width: 74.5rem;
-  min-height: 26.5rem;
+  width: 745px;
+  min-height: 265px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  margin-right: 4rem;
-  margin-bottom: 4rem;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 .CheckBox--Container ~ .CheckBox--Content{
     display: flex;
     flex-wrap: wrap;
 }
 .CheckBox--Container > img{
-    margin: 4rem;
+    margin: 40px;
     align-self: start;
 }
 .CheckBox--Content{
@@ -25,7 +25,7 @@
 .Content--Title {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 50px;
 }
 .Content--Text{
   font-size: 28px;

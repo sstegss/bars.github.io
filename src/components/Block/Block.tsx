@@ -13,8 +13,8 @@ import megaphone_icon from "/images/megaphone_icon.svg";
 
 const Container = styled.div`
   max-width: calc(100vw - 20rem);
-  margin-inline: 20rem;
-  margin-top: 9rem;
+  margin-inline: 200px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,8 +33,8 @@ const ContentLine = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3.6rem,;
-  margin-block: 4.1rem 3.6rem;
+  font-size: 36px,;
+  margin-block: 41px 36px;
 `;
 const Additions = styled.div`
   width: 100%;

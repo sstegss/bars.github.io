@@ -30,6 +30,9 @@ import "./Checkbox.css";
 // const Image = styled.div`
 //   margin: 40px;
 // `;
+const Component = styled.div`
+  display: inline;
+`;
 const CheckBox: FC<ICheckBox> = ({ title, children }) => {
   return (
     <div className="CheckBox--Container">
