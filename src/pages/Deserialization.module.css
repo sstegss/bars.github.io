@@ -1,0 +1,33 @@
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: #4481f6;
+  margin-block: 40px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-block: 40px;
+}
+h3 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-block: 40px;
+  color: #5aa9f3;
+}
+p {
+  font-size: 36px;
+  font-weight: 400;
+  margin-block: 40px;
+}
+ul {
+  font-size: 36px;
+  font-weight: 400;
+  margin-left: 2.5rem;
+  list-style-type: disc;
+}
+ol {
+  font-size: 36px;
+  font-weight: 400;
+  margin-left: 2.5rem;
+}

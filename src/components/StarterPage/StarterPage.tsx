@@ -1,15 +1,12 @@
 import styled from "styled-components";
 import Header from "../Header/Header";
 import { baseTheme } from "../../styles/theme";
-import hero from "/hero.png";
-import arrow_up from "/arrow_up.svg";
-import arrow_down from "/arrow_down.svg";
+import hero from "/public/images/hero.png";
+import arrow_up from "/public/images/arrow_up.svg";
+import arrow_down from "/public/images/arrow_down.svg";
 import AboutUs from "../AboutUs/AboutUs";
 import Block from "../Block/Block";
 import { IBlock } from "../../types/types";
-import literature from "/literature.svg";
-import test_icon from "/test_icon.svg";
-import megaphone_icon from "/megaphone_icon.svg";
 // import text from "/src/markdownText/matrix/Matrix.md?raw"; // сделать прокидку файла при переходе на страницу
 const Container = styled.div`
   background: linear-gradient(
@@ -23,49 +20,49 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-bottom-left-radius: 46px;
-  border-bottom-right-radius: 46px;
+  border-bottom-left-radius: 4.6rem;
+  border-bottom-right-radius: 4.6rem;
 `;
 
 const Promo = styled.section`
-  width: calc(100vw - 200px);
+  width: calc(100vw - 20rem);
   background-color: ${baseTheme.colors.white};
-  height: 504px;
-  border-radius: 25px;
-  margin-top: 200px;
+  height: 50.4rem;
+  border-radius: 2.5rem;
+  margin-top: 20rem;
   display: flex;
   justify-content: space-between;
-  margin-left: 12px;
+  margin-left: 1.2rem;
 `;
-const leftMargin = 69;
 const PromoText = styled.p`
-  margin-left: ${leftMargin}px;
-  margin-top: 104px;
-  font-size: 48px;
+  margin-left: 6.9rem;
+  margin-top: 10.4rem;
+  font-size: 4.8rem;
   font-weight: 600;
 `;
 const Button = styled.button`
   background-color: ${baseTheme.colors.blue};
   border-radius: 13px;
   border: 0;
-  height: 116px;
-  width: 560px;
-  margin-top: 50px;
+  height: 11.6rem;
+  width: 56rem;
+  margin-top: 5rem;
   text-transform: uppercase;
   color: ${baseTheme.colors.white};
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   &:hover {
     cursor: pointer;
   }
 `;
 const GoAhead = styled.p`
+  // заменить на существительное
   color: ${baseTheme.colors.white};
   font-size: 40px;
-  margin-block: 45px;
+  margin-block: 4.5rem;
 `;
 const blocks: IBlock[] = [
   {
@@ -79,15 +76,15 @@ const blocks: IBlock[] = [
     additions: [
       {
         text: "Дополнительный материал",
-        image: literature,
+        image: "literature",
       },
       {
         text: "Итоговый тест",
-        image: test_icon,
+        image: "test_icon",
       },
       {
         text: "Аудио-лекция",
-        image: megaphone_icon,
+        image: "megaphone_icon",
       },
     ],
   },
@@ -101,11 +98,11 @@ const blocks: IBlock[] = [
     additions: [
       {
         text: "Дополнительный материал",
-        image: literature,
+        image: "literature",
       },
       {
         text: "Итоговый тест",
-        image: test_icon,
+        image: "test_icon",
       },
     ],
   },
@@ -119,15 +116,15 @@ const blocks: IBlock[] = [
     additions: [
       {
         text: "Дополнительный материал",
-        image: literature,
+        image: "literature",
       },
       {
         text: "Итоговый тест",
-        image: test_icon,
+        image: "test_icon",
       },
       {
         text: "Аудио-лекция",
-        image: megaphone_icon,
+        image: "megaphone_icon",
       },
     ],
   },
@@ -141,20 +138,22 @@ const blocks: IBlock[] = [
     additions: [
       {
         text: "Дополнительный материал",
-        image: literature,
+        image: "literature",
       },
       {
         text: "Итоговый тест",
-        image: test_icon,
+        image: "test_icon",
       },
       {
         text: "Аудио-лекция",
-        image: megaphone_icon,
+        image: "megaphone_icon",
       },
     ],
   },
 ];
+//сделать запрос blocks с бека
 function StarterPage() {
+  // file await
   return (
     <>
       <Header />
@@ -177,10 +176,9 @@ function StarterPage() {
         <img src={arrow_down} alt="" />
       </Container>
       <AboutUs />
-      <Block {...blocks[0]}></Block>
-      <Block {...blocks[1]}></Block>
-      <Block {...blocks[2]}></Block>
-      <Block {...blocks[3]}></Block>
+      {blocks.map((block) => (
+        <Block key={block.blockNumber}{...block}></Block>
+      ))}
     </>
   );
 }

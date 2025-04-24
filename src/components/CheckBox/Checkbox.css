@@ -1,0 +1,33 @@
+.CheckBox--Container{
+  width: 74.5rem;
+  min-height: 26.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+}
+.CheckBox--Container ~ .CheckBox--Content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CheckBox--Container > img{
+    margin: 4rem;
+    align-self: start;
+}
+.CheckBox--Content{
+  display: flex;
+  flex-direction: column;
+}
+.Content--Title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.Content--Text{
+  font-size: 28px;
+  color: #6c6c72;
+}

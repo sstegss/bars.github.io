@@ -14,9 +14,7 @@ export interface IAddition{
   text: string;
   image: string;
 }
-export interface IDeserialization{
-  file: string | '';
-}
+
 
 export interface IPage{
   markdownContent: string | '';

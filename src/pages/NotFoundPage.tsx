@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const Container = styled.div`
-    font-size: 40px;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 5rem;
 `
 export default function NotFoundPage(){
 
