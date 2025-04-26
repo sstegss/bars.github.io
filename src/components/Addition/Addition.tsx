@@ -4,6 +4,7 @@ import { IAddition } from "../../types/types";
 import { baseTheme } from "../../styles/theme";
 
 const Container = styled.a`
+  margin-block: 2rem;
   width: 450px;
   height: 200px;
   background: linear-gradient(
@@ -12,14 +13,14 @@ const Container = styled.a`
     rgba(31, 169, 255, 1) 100%
   );
   border-radius: 25px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${baseTheme.colors.white};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
- 
+
   & > img {
     width: 70px;
     height: 70px;
@@ -30,9 +31,8 @@ const Container = styled.a`
 const Addition: FC<IAddition> = ({ text, image }) => {
   return (
     <Container href="exaple.com">
-      
       <img src={image} alt="" />
-      <p>{text}</p>
+      {text}
     </Container>
   );
 };

@@ -1,14 +1,16 @@
+
+
+/* display: inline-block; */
 .CheckBox--Container{
-  width: 745px;
+  width: 39vw;
   min-height: 265px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  margin-right: 40px;
-  margin-bottom: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 .CheckBox--Container ~ .CheckBox--Content{
     display: flex;
@@ -23,11 +25,11 @@
   flex-direction: column;
 }
 .Content--Title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 50px;
 }
 .Content--Text{
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #6c6c72;
 }

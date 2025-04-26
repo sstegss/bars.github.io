@@ -11,11 +11,8 @@ import timemanagement from '../markdownText/timemanagement/Timemanagement.md?raw
 import matrix from "../markdownText/matrix/Matrix.md?raw";
 import abcde from "../markdownText/abcde/Abcde.md?raw";
 
-// import file from '../markdownText/matrix/matrix.md?raw'
-
 const Container = styled.div`
-  display:flex;
-  flex-wrap: wrap;
+  display:inline-block;
   justify-content: center;
   align-items: center;
   padding-top: 140px;
@@ -38,6 +35,7 @@ const Deserialization: FC<Props> = ({ back }) => {
       <Container>
         <Markdown
           options={{
+            wrapper: 'span',
             overrides: {
               CheckBox: {
                 component: CheckBox,
@@ -45,6 +43,7 @@ const Deserialization: FC<Props> = ({ back }) => {
                   className: "CheckBox"
                 }
               },
+
             },
           }}
         >

@@ -44,6 +44,7 @@ const PromoText = styled.p`
   font-size: 3rem;
   font-weight: 600;
   align-self: center;
+  
   @media (${baseTheme.media.megaLarge}) {
     font-size: 2rem;
   }
@@ -51,6 +52,12 @@ const PromoText = styled.p`
     grid-column: span 2;
   }
   @media (${baseTheme.media.small}) {
+    font-size: 1rem;
+  }
+  @media (max-height: 550px) {
+    font-size: 1.5rem;
+  }
+  @media (max-height: 400px) {
     font-size: 1rem;
   }
 `;
@@ -158,9 +165,9 @@ function StarterPage() {
         <img src={arrow_down} alt="" />
       </Container>
       <AboutUs />
-      {/* {blocks.map((block) => (
+      {blocks.map((block) => (
         <Block key={block.blockNumber}{...block}></Block>
-      ))} */}
+      ))}
     </>
   );
 }

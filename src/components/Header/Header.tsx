@@ -1,16 +1,13 @@
 import styled from "styled-components";
 import { baseTheme } from "../../styles/theme";
 import burger from "/images/burger.svg";
-import logo from "/images/logo.svg";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import arrow_back from "/images/arrow_back.svg";
 const Container = styled.header`
   margin-block: 3%;
   position: fixed;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  min-width: 100vw;
   height: 3.75vh;
   max-height: 72px;
   min-height: 40px;
@@ -20,6 +17,7 @@ const Head = styled.div`
   background-color: ${baseTheme.colors.white};
   height: 72px;
   display: flex;
+  justify-self: center;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
