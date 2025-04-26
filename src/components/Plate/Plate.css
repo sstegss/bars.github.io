@@ -1,0 +1,36 @@
+.Plate--Container {
+  display: inline-block;
+
+}
+.Plate--Staff{
+    width: 25vw;
+    min-height: 160px;
+    background-color: #5AA9F3;
+    border-radius: 25px;
+    margin-right: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Plate--Title{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.Plate--Text{
+    padding-inline: 1.5rem;
+    color: black;
+    font-size: 1.25rem;
+}
+@media (max-width: 1140px) {
+    .Plate--Containerr {
+      display: flex;
+      justify-content: center;
+    }
+    .Plate--Staff {
+      width: 80vw;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+  }

@@ -56,7 +56,6 @@ const ContentLine = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 2.25rem;
-  margin-block: 2rem;
   @media (${baseTheme.media.megaLarge}) {
     font-size: 3rem;
   }

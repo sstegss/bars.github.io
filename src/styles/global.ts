@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-
 *{
   margin: 0;
   
@@ -17,11 +16,11 @@ p{
   margin-inline:0;
 }
 body{
-    background-color: white;
+  background-color: white;
 }
 button{
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
  

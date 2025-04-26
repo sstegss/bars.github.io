@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 
 const Promo = styled.section`
-  width: calc(100vw - 10%);
+  width: 80vw;
   background-color: ${baseTheme.colors.white};
   height: 50vh;
   border-radius: 25px;
@@ -115,7 +115,9 @@ const Hero = styled.div`
   align-items: end;
   grid-column-start: 2;
   grid-row: span 2;
+  
   & > img {
+    margin-block: 0;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;

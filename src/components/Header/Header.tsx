@@ -5,15 +5,14 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import arrow_back from "/images/arrow_back.svg";
 const Container = styled.header`
-  margin-block: 3%;
+  margin-top: 1rem;
   position: fixed;
   min-width: 100vw;
-  height: 3.75vh;
-  max-height: 72px;
-  min-height: 40px;
+  height: 72px;
 `;
 const Head = styled.div`
-  width: calc(100vw - 10%);
+  
+  width: 80vw;
   background-color: ${baseTheme.colors.white};
   height: 72px;
   display: flex;
@@ -38,20 +37,19 @@ const Button = styled.a`
     cursor: pointer;
   }
   @media (${baseTheme.media.large}) {
-    font-size: 1rem
+    font-size: 1rem;
   }
   @media (${baseTheme.media.small}) {
     margin-right: 15px;
   }
 `;
 const Logo = styled.div`
-   font-family: ${baseTheme.fonts.minor};
-   color: ${baseTheme.colors.black};
-   font-size: 2rem;
-   @media (${baseTheme.media.large}) {
-    font-size: 1rem
+  font-family: ${baseTheme.fonts.minor};
+  color: ${baseTheme.colors.black};
+  font-size: 2rem;
+  @media (${baseTheme.media.large}) {
+    font-size: 1rem;
   }
-  
 `;
 const Burger = styled.div`
   margin-inline: 5% 18px;
@@ -73,9 +71,7 @@ const Header: FC<Props> = ({ back }) => {
           )}
         </Burger>
 
-        <Logo>
-          tim lead
-        </Logo>
+        <Logo>tim lead</Logo>
         <Button href="https://t.me/barsuadlearn_bot">Чат-бот</Button>
       </Head>
     </Container>

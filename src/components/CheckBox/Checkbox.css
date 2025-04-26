@@ -1,35 +1,65 @@
-
-
-/* display: inline-block; */
-.CheckBox--Container{
-  width: 39vw;
-  min-height: 265px;
+.CheckBox--Container {
+  display: inline-block;
+}
+.CheckBox--Staff {
   display: flex;
+  width: 35vw;
+  min-height: 265px;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   padding-right: 40px;
   padding-bottom: 40px;
+  margin-right: 5vw;
+  margin-top: 20px;
 }
-.CheckBox--Container ~ .CheckBox--Content{
-    display: flex;
-    flex-wrap: wrap;
+
+.CheckBox--Staff > img {
+  margin-top: 40px;
+  padding-inline: 20px;
+  align-self: start;
 }
-.CheckBox--Container > img{
-    margin: 40px;
-    align-self: start;
-}
-.CheckBox--Content{
+.CheckBox--Content {
   display: flex;
   flex-direction: column;
 }
-.Content--Title {
+.CheckBox--Title {
+  justify-self: center;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
-.Content--Text{
+.CheckBox--Text {
   font-size: 1.75rem;
   color: #6c6c72;
 }
+
+@media (max-width: 1140px) {
+  .CheckBox--Containerr {
+    display: flex;
+    justify-content: center;
+  }
+  .CheckBox--Staff {
+    width: 80vw;
+    margin: 0;
+  }
+}
+@media (max-width: 960px) {
+  
+  .CheckBox--Title {
+    font-size: 1.75rem;
+  }
+  .CheckBox--Text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .CheckBox--Title {
+    font-size: 1.5rem;
+  }
+  .CheckBox--Text {
+    font-size: 1.25rem;
+  }
+}
+
