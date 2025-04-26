@@ -23,12 +23,12 @@ p {
 ul {
   font-size: 2.25rem;
   font-weight: 400;
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
   list-style-type: disc;
 }
 ol {
   font-size: 2.25rem;
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
   font-weight: 400;
 }
 img {

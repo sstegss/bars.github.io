@@ -34,7 +34,7 @@ const Promo = styled.section`
   grid-template-rows: 60% 40%;
   justify-content: space-between;
   align-self: center;
-  margin-top: 130px;
+  margin-top: 100px;
 `;
 const PromoText = styled.p`
   grid-column-start: 1;
@@ -132,7 +132,7 @@ const GoAhead = styled.p`
   color: ${baseTheme.colors.white};
   font-size: 40px;
   text-align: center;
-  margin-block: 30px;
+  margin-top: 15px;
   @media ${baseTheme.media.small} {
     font-size: 1rem;
   }
@@ -250,10 +250,6 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
-      },
-      {
-        text: "Итоговый тест",
-        image: "test_icon",
       },
       {
         text: "Аудио-лекция",
