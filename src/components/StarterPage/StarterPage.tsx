@@ -41,7 +41,7 @@ const PromoText = styled.p`
   grid-column-end: 2;
   margin-inline: 3vw;
   margin-top: 3vw;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   align-self: center;
   
