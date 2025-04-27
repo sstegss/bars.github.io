@@ -5,15 +5,15 @@ import Header from "../components/Header/Header";
 import { useParams } from "react-router-dom";
 import CheckBox from "../components/CheckBox/CheckBox";
 import Plate from "../components/Plate/Plate";
-import "./Deserialization.module.css";
-import timemanagement from '../markdownText/timemanagement/Timemanagement.md?raw'
-import matrix from "../markdownText/matrix/Matrix.md?raw";
-import abcde from "../markdownText/abcde/Abcde.md?raw";
-import lider from "../markdownText/lider/lider.md?raw";
-import liderStyle from "../markdownText/liderStyle/liderStyle.md?raw";
-import settingTask from "../markdownText/settingTask/settingTask.md?raw";
-import delegate from "../markdownText/delegate/delegate.md?raw";
-import workCulture from "../markdownText/workCulture/workCulture.md?raw";
+import "./Deserialization.css";
+// import timemanagement from '../markdownText/timemanagement/Timemanagement.md?raw'
+// import matrix from "../markdownText/matrix/Matrix.md?raw";
+// import abcde from "../markdownText/abcde/Abcde.md?raw";
+// import lider from "../markdownText/lider/lider.md?raw";
+// import liderStyle from "../markdownText/liderStyle/liderStyle.md?raw";
+// import settingTask from "../markdownText/settingTask/settingTask.md?raw";
+// import delegate from "../markdownText/delegate/delegate.md?raw";
+// import workCulture from "../markdownText/workCulture/workCulture.md?raw";
 import teamRole from "../markdownText/teamRole/teamRole.md?raw";
 
 const Container = styled.div`
