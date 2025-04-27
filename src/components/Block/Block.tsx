@@ -120,6 +120,7 @@ const Block: FC<IBlock> = ({ blockNumber, theme, chilren, additions }) => {
             key={addition.text}
             text={addition.text}
             image={imageChange(addition.image)}
+            link={addition.link}
           />
         ))}
       </Additions>

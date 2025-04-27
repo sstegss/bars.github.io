@@ -13,6 +13,7 @@ export interface subtheme {
 export interface IAddition{
   text: string;
   image: string;
+  link: string;
 }
 
 

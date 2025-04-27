@@ -28,9 +28,9 @@ const Container = styled.a`
     align-self: center;
   }
 `;
-const Addition: FC<IAddition> = ({ text, image }) => {
+const Addition: FC<IAddition> = ({ text, image, link }) => {
   return (
-    <Container href="exaple.com">
+    <Container href={link}>
       <img src={image} alt="" />
       {text}
     </Container>

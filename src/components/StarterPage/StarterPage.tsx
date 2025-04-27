@@ -188,14 +188,17 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
+        link: "example.com",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
+        link: "example.com",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
+        link: "example.com",
       },
     ],
   },
@@ -210,10 +213,12 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
+        link: "example.com",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
+        link: "example.com",
       },
     ],
   },
@@ -228,14 +233,17 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
+        link: "example.com",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
+        link: "example.com",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
+        link: "example.com",
       },
     ],
   },
@@ -250,10 +258,12 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
+        link: "example.com",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
+        link: "example.com",
       },
     ],
   },
