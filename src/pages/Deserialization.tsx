@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import CheckBox from "../components/CheckBox/CheckBox";
 import Plate from "../components/Plate/Plate";
 import "./Deserialization.css";
-// import timemanagement from '../markdownText/timemanagement/Timemanagement.md?raw'
+// import timemanagement from '../markdownText/timemanagement/timemanagement.md?raw'
 // import matrix from "../markdownText/matrix/Matrix.md?raw";
 // import abcde from "../markdownText/abcde/Abcde.md?raw";
 // import lider from "../markdownText/lider/lider.md?raw";

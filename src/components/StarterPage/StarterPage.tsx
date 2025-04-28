@@ -180,9 +180,9 @@ const blocks: IBlock[] = [
     blockNumber: 1,
     theme: "Тайм-менеджмент",
     chilren: [
-      { name: "Тайм менеджмент тим лида", link: "/Timemanagement" },
-      { name: "Матрица Эйзенхауэра", link: "/Matrix" },
-      { name: "МЕТОД Abcde", link: "/ABCDE" },
+      { name: "Тайм менеджмент тим лида", link: "/timemanagement" },
+      { name: "Матрица Эйзенхауэра", link: "/matrix" },
+      { name: "МЕТОД Abcde", link: "/abcde" },
     ],
     additions: [
       {
@@ -206,8 +206,8 @@ const blocks: IBlock[] = [
     blockNumber: 2,
     theme: "Навык Лидерство",
     chilren: [
-      { name: "Кто такой лидер?", link: "/Timemanagement" },
-      { name: "Стили лидерства", link: "/Timemanagement" },
+      { name: "Кто такой лидер?", link: "/lider" },
+      { name: "Стили лидерства", link: "/liderStyle" },
     ],
     additions: [
       {
@@ -226,8 +226,8 @@ const blocks: IBlock[] = [
     blockNumber: 3,
     theme: "Управление задачами",
     chilren: [
-      { name: "Постановка задач модели", link: "/Timemanagement" },
-      { name: "Делегирование", link: "/Timemanagement" },
+      { name: "Постановка задач модели", link: "/settingTask" },
+      { name: "Делегирование", link: "/delegate" },
     ],
     additions: [
       {
@@ -251,8 +251,8 @@ const blocks: IBlock[] = [
     blockNumber: 4,
     theme: "Управление с командой",
     chilren: [
-      { name: "Культура совместной работы", link: "/Timemanagement" },
-      { name: "Роли в команде", link: "/Timemanagement" },
+      { name: "Культура совместной работы", link: "/workCulture" },
+      { name: "Роли в команде", link: "/teamRole" },
     ],
     additions: [
       {
