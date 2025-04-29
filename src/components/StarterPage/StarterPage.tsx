@@ -61,7 +61,7 @@ const PromoText = styled.p`
     font-size: 1rem;
   }
 `;
-const Button = styled.button`
+const Button = styled.a`
   margin-left: 3vw;
   margin-bottom: 3vw;
   grid-column-start: 1;
@@ -138,9 +138,8 @@ const GoAhead = styled.p`
   }
 `;
 
-//сделать запрос blocks с бека
+
 function StarterPage() {
-  // file await
   return (
     <>
       <Header />
@@ -151,7 +150,7 @@ function StarterPage() {
             <span style={{ color: "#4481F6" }}> «Тим Лид»</span> — вашу
             стартовую точку в мире эффективного лидерства!
           </PromoText>
-          <Button>
+          <Button href="https://bars.group/">
             записаться
             <img src={arrow_up} alt="" />
           </Button>
@@ -180,25 +179,25 @@ const blocks: IBlock[] = [
     blockNumber: 1,
     theme: "Тайм-менеджмент",
     chilren: [
-      { name: "Тайм менеджмент тим лида", link: "/timemanagement" },
-      { name: "Матрица Эйзенхауэра", link: "/matrix" },
-      { name: "МЕТОД Abcde", link: "/abcde" },
+      { name: "Тайм менеджмент тим лида", link: "/Timemanagement" },
+      { name: "Матрица Эйзенхауэра", link: "/Matrix" },
+      { name: "МЕТОД Abcde", link: "/ABCDE" },
     ],
     additions: [
       {
         text: "Дополнительный материал",
         image: "literature",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/14nrp7Thz5X2TxA2zUuKEjs1oMZdtHfJq?usp=sharing",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
-        link: "example.com",
+        link: "https://t.me/barsuadlearn_bot",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/14nrp7Thz5X2TxA2zUuKEjs1oMZdtHfJq?usp=sharing",
       },
     ],
   },
@@ -213,12 +212,12 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/1k2eKniVtRrZni1elRF3RtytiKI2jdKY3?usp=sharing",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
-        link: "example.com",
+        link: "https://t.me/barsuadlearn_bot",
       },
     ],
   },
@@ -233,17 +232,17 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/1Z29SL_tW6VR_90nocvui3jSajZBXOd39?usp=sharing",
       },
       {
         text: "Итоговый тест",
         image: "test_icon",
-        link: "example.com",
+        link: "https://t.me/barsuadlearn_bot",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/1Z29SL_tW6VR_90nocvui3jSajZBXOd39?usp=sharing",
       },
     ],
   },
@@ -258,12 +257,12 @@ const blocks: IBlock[] = [
       {
         text: "Дополнительный материал",
         image: "literature",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/1hPiSUtguIYIKwiNJLM1xfPNc2i3FtVW5?usp=sharing",
       },
       {
         text: "Аудио-лекция",
         image: "megaphone_icon",
-        link: "example.com",
+        link: "https://drive.google.com/drive/folders/1hPiSUtguIYIKwiNJLM1xfPNc2i3FtVW5?usp=sharing",
       },
     ],
   },
